@@ -22,6 +22,7 @@ else if(hr > 12 && hr <= 17){
 else{
   speak("good Evening Boss");
 }
+
 }
 
 window.addEventListener('load', ()=>{
@@ -60,6 +61,10 @@ function speakThis(message){
   }
   else if (message.includes('name')){
     const finalText = "my name is rustle";
+    speech.text = finalText;
+  }
+  else if (message.includes('thank you')){
+    const finalText = "you're welcome , how can i help you";
     speech.text = finalText;
   }
   else if (message.includes('open google')){
